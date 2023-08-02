@@ -78,12 +78,6 @@
       "size" : "27.5x27.5"
     },
     {
-      "filename" : "AppleWatch-Icon-27.5@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "27.5x27.5"
-    },
-    {
       "filename" : "Icon-40.png",
       "idiom" : "universal",
       "scale" : "1x",
@@ -138,12 +132,6 @@
       "size" : "83.5x83.5"
     },
     {
-      "filename" : "Icon-83.5@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x",
-      "size" : "83.5x83.5"
-    },
-    {
       "filename" : "AppleWatch-Icon-86@2x.png",
       "idiom" : "universal",
       "scale" : "2x",
@@ -158,8 +146,8 @@
     {
       "filename" : "iTunesArtwork-1024.png",
       "idiom" : "universal",
-      "scale" : "1x",
-      "size" : "1024x1024"
+      "scale" : "2x",
+      "size" : "98x98"
     },
     {
       "filename" : "Icon-29@2x.png",
@@ -180,6 +168,20 @@
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40",
+      "unassigned" : true
+    },
+    {
+      "filename" : "AppleWatch-Icon-27.5@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "27.5x27.5",
+      "unassigned" : true
+    },
+    {
+      "filename" : "Icon-83.5@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x",
+      "size" : "83.5x83.5",
       "unassigned" : true
     }
   ],
