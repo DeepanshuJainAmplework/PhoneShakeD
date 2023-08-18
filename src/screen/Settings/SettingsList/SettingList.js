@@ -19,7 +19,10 @@ const SettingList = ({navigation}) => {
   const [modalVisible, setModalVisible] = useState(false);
 
   const openmodal=()=>{
-    setModalVisible(true)
+    setModalVisible(true);
+  }
+  const closemodal=()=>{
+    setModalVisible(false);
   }
 
   const handleItems = (item) => {
@@ -63,6 +66,7 @@ const SettingList = ({navigation}) => {
       {modalVisible &&(
         < ModalComponent
           visible={modalVisible}
+          onClose={closemodal}
           logoutpress={()=>{
             navigation.dispatch(StackActions.popToTop)
           }}

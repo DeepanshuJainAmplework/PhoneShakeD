@@ -3,10 +3,10 @@ import {View, Text, StyleSheet, Modal, TouchableOpacity} from 'react-native';
 
 import { s } from 'react-native-size-matters';
 
-const ModalComponent = ({logoutpress,visible}) => {
+const ModalComponent = ({logoutpress,visible, onClose}) => {
   const [modalstate,setmodalstate]=useState(false)
   return (
-    <Modal animationType='slide' transparent={true} visible={visible} >
+    <Modal animationType='slide' transparent={true} visible={visible} onRequestClose={onClose} >
       <View style={style.overlay}>
         
         <View style={style.container}>
@@ -24,7 +24,7 @@ const ModalComponent = ({logoutpress,visible}) => {
                     Logout
 
                 </Text>
-                <Text style={[style.options,{color:'rgb(168 168 168)'}]} >
+                <Text style={[style.options,{color:'rgb(168 168 168)'}]} onPress={onClose}>
                     Cancel
 
                 </Text>
