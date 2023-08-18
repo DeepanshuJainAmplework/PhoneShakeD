@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {TextInput, StyleSheet, Text, View} from 'react-native';
 import {Selectlist} from './DropDownList';
-import {s} from 'react-native-size-matters';
+import {s, ms} from 'react-native-size-matters';
 import  Fontisto from 'react-native-vector-icons/Fontisto';
 
 const InputText = ({placeholder, onChangeText}) => {
@@ -79,9 +79,9 @@ const BioText=()=>{
 
 const SearchInput=({placeholder})=>{
   return(
-    <View style={{width:'100%', backgroundColor:'rgb(247 247 247)', flexDirection:'row',alignItems:'center', height:29}}>
-      <Fontisto name='search'  />
-      <TextInput style={{fontSize:s(12), marginLeft:10}} placeholder={placeholder}/>
+    <View  style={{marginVertical:5 ,width:'100%', backgroundColor:'rgb(247 247 247)', flexDirection:'row',alignItems:'center', height:ms(36)}}>
+      <Fontisto name='search' style={{paddingHorizontal:10}} color='rgb(168 168 168)' size={14} />
+      <TextInput style={{fontSize:s(13),width:'100%'}} placeholder={placeholder}/>
 
     </View>
 

@@ -22,7 +22,7 @@ const Name = ({navigation}) => {
       <HeaderView />
 
       <HeadingView>
-        <Heading Htext={"What's your Name?"} />
+        <Heading HeadingText={"What's your Name?"} />
       </HeadingView>
 
       <InputView>

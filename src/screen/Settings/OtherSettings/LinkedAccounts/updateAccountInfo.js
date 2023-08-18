@@ -28,7 +28,7 @@ const UpdateAccountInfo = ({route, navigation}) => {
       </HeaderView>
 
       <HeadingView>
-        <Heading Htext={
+        <Heading HeadingText={
             Item=='Website'?"What's your Website?":
             Item=='Blog'?"Share your thoughts\nwith Blog":
             Item=='Linkedin'?"What's your Linkedin?":

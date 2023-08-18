@@ -2,10 +2,10 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import { s } from 'react-native-size-matters';
 
-const Heading = ({Htext, customView}) => {
+const Heading = ({HeadingText, customView}) => {
   return (
     <View style={styles.View}>
-      <Text style={styles.Text}>{Htext}</Text>
+      <Text style={styles.Text}>{HeadingText}</Text>
     </View>
   );
 };

@@ -53,7 +53,7 @@ const UserName = ({navigation}) => {
           <HeaderContainer back={<Ionicons name="chevron-back-sharp" size={24} />} onPressBack={()=>(navigation.goBack())} />
         </HeaderView>
         <HeadingView>
-        <Heading Htext={"Choose a @Handle,\nyour unique name for sharing your contact with anyone"} />
+        <Heading HeadingText={"Choose a @Handle,\nyour unique name for sharing your contact with anyone"} />
         </HeadingView>
         <View style={{flex: 0.34, justifyContent: 'center', width: 280, }}>
           <View

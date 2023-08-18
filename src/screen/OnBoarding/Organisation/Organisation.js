@@ -30,7 +30,7 @@ const Org = ({navigation}) => {
       </HeaderView>
 
       <HeadingView>
-        <Heading Htext={" What's your\ncurrent Organization ?"} />
+        <Heading HeadingText={" What's your\ncurrent Organization ?"} />
       </HeadingView>
       <InputView>
         <InputText

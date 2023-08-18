@@ -29,7 +29,7 @@ const Designation = ({navigation}) => {
         />
       </HeaderView>
       <HeadingView>
-        <Heading Htext={" What's your\nposition/designation ?"} />
+        <Heading HeadingText={" What's your\nposition/designation ?"} />
       </HeadingView>
 
       <InputView>

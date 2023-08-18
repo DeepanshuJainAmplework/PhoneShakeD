@@ -42,7 +42,7 @@ const UpdateScreen = ({route, navigation}) => {
 
       <HeadingView>
         <Heading
-          Htext={
+          HeadingText={
             Item == 'Name'
               ? "What's your name?"
               : Item == 'Organisation'
