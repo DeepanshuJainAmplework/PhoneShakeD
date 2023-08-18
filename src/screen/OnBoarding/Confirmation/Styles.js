@@ -9,7 +9,7 @@ const Styles=StyleSheet.create({
     inActiveBtn:{
         backgroundColor:'rgba(32 142 251/0.5)'
     },
-    baseView:{
+    ParentViewiew:{
         backgroundColor: 'white',
         flex: 1,
         justifyContent: 'center',
@@ -19,7 +19,6 @@ const Styles=StyleSheet.create({
         fontSize: s(20),
         color: 'black',
         textAlign: 'center',
-        width: s(180),
         fontWeight: '600',
     },
     emailPressable:
@@ -40,11 +39,12 @@ const Styles=StyleSheet.create({
     },
     inputText:{
         fontSize: 18,
-        width: 285,
         textAlign: 'center',
         borderBottomWidth:1,
         borderBottomColor: 'rgb(168 168 168)',
-        paddingBottom:8
+        paddingBottom:8,
+        width:250,
+        
     },
     subTextTrue:{
       marginTop: 7,

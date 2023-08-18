@@ -1,7 +1,7 @@
 #import "AppDelegate.h"
-
+#import "RNBootSplash.h"
 #import <React/RCTBundleURLProvider.h>
-#import "RNSplashScreen.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -32,7 +32,7 @@
                                           moduleName:moduleName
                                            initProps:initProps];
 
-  [RNBootSplash initWithStoryboard:@"BootSplash" rootView:rootView]; // ⬅️ initialize the splash screen
+  [RNBootSplash initWithStoryboard:@"BootSplash" rootView:rootView]; 
 
   return rootView;
 }

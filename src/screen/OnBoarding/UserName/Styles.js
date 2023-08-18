@@ -9,7 +9,7 @@ const Styles = StyleSheet.create({
   inactiveBtn: {
     backgroundColor: 'rgba(32 142 251/0.5)',
   },
-  BaseView: {
+  ParentViewiew: {
     backgroundColor: 'white',
     flex: 1,
     justifyContent: 'center',

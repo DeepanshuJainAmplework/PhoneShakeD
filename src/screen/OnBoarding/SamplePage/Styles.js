@@ -4,32 +4,37 @@ import { s,ms, mvs } from "react-native-size-matters";
 
 
 const Styles=StyleSheet.create({
-    BaseView:{
+    ParentViewiew:{
         flex:1,
         backgroundColor:'white',
         alignItems:'center'
     },
-    headView:{
-        flex:0.1,
-        width:'100%',
-    },
+    
     SampleView:{
         flex:0.8,
-        borderWidth:1,
         width:'100%',
         alignItems:'center',
+        
         
     },
     heading:{
         fontSize:s(20),
         marginBottom:s(10),
-        color:'black'
+        color:'black',
+        fontWeight:'500',
+        paddingBottom:15
 
     },
     SampleImage:{
-        height:'80%', 
+        height:'88%', 
         width:'70%',
-        resizeMode:'contain'
+        resizeMode:'contain',
+        shadowColor:'rgba(0 0 0/0.16)',
+        shadowOffset: {
+            width: 0,
+            height: 3,
+          },
+          shadowOpacity: 0.6,
 
     }
 

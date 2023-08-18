@@ -4,7 +4,8 @@ import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
-import org.devio.rn.splashscreen.SplashScreen;
+import android.os.Bundle;
+import com.zoontek.rnbootsplash.RNBootSplash;
 
 
 public class MainActivity extends ReactActivity {
@@ -19,11 +20,7 @@ public class MainActivity extends ReactActivity {
     return "PhoneShakeD";
   }
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    RNBootSplash.init(this); 
-    super.onCreate(savedInstanceState); 
-  }
+  
 
   /**
    * Returns the instance of the {@link ReactActivityDelegate}. Here we use a util class {@link
@@ -38,4 +35,11 @@ public class MainActivity extends ReactActivity {
         // If you opted-in for the New Architecture, we enable the Fabric Renderer.
         DefaultNewArchitectureEntryPoint.getFabricEnabled());
   }
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    RNBootSplash.init(this); 
+    super.onCreate(savedInstanceState); 
+  }
+
 }

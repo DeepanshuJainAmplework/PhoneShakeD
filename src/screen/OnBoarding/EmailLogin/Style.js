@@ -9,7 +9,7 @@ const Styles=StyleSheet.create({
     inActiveBtn:{
         backgroundColor:'rgba(32 142 251/0.5)'
     },
-    baseView:{
+    ParentViewiew:{
         backgroundColor: 'white',
         flex: 1,
         justifyContent: 'center',
@@ -39,8 +39,8 @@ const Styles=StyleSheet.create({
         
     },
     inputText:{
-        fontSize: 18,
-        width: 285,
+        fontSize: s(18),
+        width: 250,
         textAlign: 'center',
         borderBottomWidth:1,
         borderBottomColor: 'rgb(168 168 168)',

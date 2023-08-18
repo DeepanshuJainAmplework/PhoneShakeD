@@ -1,19 +1,11 @@
 import React, {useState} from 'react';
 import {s, ms} from 'react-native-size-matters';
-import 'react-native-gesture-handler';
-import {
-  View,
-  Text,
-  SectionList,
-  ScrollView,
-  SafeAreaView,
-  Pressable,
-  Alert,
-} from 'react-native';
+import { View, Text, ScrollView, SafeAreaView,} from 'react-native';
 import Styles from './Style';
 import CheckBox from '@react-native-community/checkbox';
-import HeaderP from '../../../containers/header';
+import HeaderContainer from '../../../containers/header';
 import {Btn} from '../../../components/Pressable';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const TermsData = ({navigation}) => {
   const [check, setCheck] = useState(false);
@@ -30,16 +22,10 @@ const TermsData = ({navigation}) => {
     <SafeAreaView
       style={{flex: 1, justifyContent: 'center', backgroundColor: 'white'}}>
       <View style={{flex: 0.1, width: '100%'}}>
-        <HeaderP
-          back="<"
-          onPressBack={() => {
-            navigation.goBack();
-          }}
-          backDisable={false}
+        <HeaderContainer
+          back={<Ionicons name="chevron-back-sharp" size={24} />}
+          onPressBack={() => {navigation.goBack()}}          
           title="Privacy Policy"
-          onpressSkip={null}
-          SkipDisable={true}
-          SkipText=" "
         />
       </View>
 
@@ -133,7 +119,7 @@ const TermsData = ({navigation}) => {
         <View style={{flex: 0.5}}>
           <Btn
             onPress={() => (
-              validate() == true ? navigation.navigate('Completion') : null)}
+              validate() == true ? navigation.navigate('SamplePage') : null)}
             title="Complete"
             bgcolor={validate() == true ? Styles.activeBtn : Styles.inactiveBtn}
           />

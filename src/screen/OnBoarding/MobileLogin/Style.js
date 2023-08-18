@@ -1,26 +1,30 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import { s,ms,mvs } from "react-native-size-matters";
+import { themedefault } from "../../../Theme";
 
 const Styles=StyleSheet.create({
     activeBtn:{
-        backgroundColor:'#1e90ff'
+        backgroundColor:themedefault.colors.dogerblue
     },
     inActiveBtn:{
-        backgroundColor:'rgba(32 142 251/0.5)'
+        backgroundColor:themedefault.colors.lightdodgerblue
     },
-    baseView:{
+    ParentViewiew:{
         backgroundColor: 'white',
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        
+        
     },
     head:{
         fontSize: s(20),
-        color: 'black',
+        color: themedefault.colors.black,
         textAlign: 'center',
         width: s(154),
         fontWeight: '600',
+        fontFamily:themedefault.fonts.Borel,
     },
     emailPressable:
         {width: 285, height: 36, marginTop: 8
@@ -29,6 +33,7 @@ const Styles=StyleSheet.create({
         textAlign: 'center',
         padding: 8,
         color: 'rgb(32 142 251)',
+        
     },
     Input:{
         borderBottomColor: 'rgb(168 168 168)',

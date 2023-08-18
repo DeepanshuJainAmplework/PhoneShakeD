@@ -7,13 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006091432A729DBE00FA191E /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091302A729DBD00FA191E /* Fontisto.ttf */; };
+		006091442A729DBE00FA191E /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091312A729DBD00FA191E /* Octicons.ttf */; };
+		006091452A729DBE00FA191E /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091322A729DBD00FA191E /* Feather.ttf */; };
+		006091462A729DBE00FA191E /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091332A729DBD00FA191E /* FontAwesome6_Regular.ttf */; };
+		006091472A729DBE00FA191E /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091342A729DBD00FA191E /* Entypo.ttf */; };
+		006091482A729DBE00FA191E /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091352A729DBD00FA191E /* FontAwesome5_Brands.ttf */; };
+		006091492A729DBE00FA191E /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091362A729DBD00FA191E /* MaterialCommunityIcons.ttf */; };
+		0060914A2A729DBE00FA191E /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091372A729DBD00FA191E /* AntDesign.ttf */; };
+		0060914B2A729DBE00FA191E /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091382A729DBD00FA191E /* Foundation.ttf */; };
+		0060914C2A729DBE00FA191E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091392A729DBD00FA191E /* Ionicons.ttf */; };
+		0060914D2A729DBE00FA191E /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0060913A2A729DBD00FA191E /* FontAwesome5_Solid.ttf */; };
+		0060914E2A729DBE00FA191E /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0060913B2A729DBD00FA191E /* FontAwesome5_Regular.ttf */; };
+		0060914F2A729DBE00FA191E /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0060913C2A729DBD00FA191E /* FontAwesome.ttf */; };
+		006091502A729DBE00FA191E /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0060913D2A729DBD00FA191E /* Zocial.ttf */; };
+		006091512A729DBE00FA191E /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0060913E2A729DBD00FA191E /* EvilIcons.ttf */; };
+		006091522A729DBE00FA191E /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0060913F2A729DBD00FA191E /* FontAwesome6_Solid.ttf */; };
+		006091532A729DBE00FA191E /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091402A729DBD00FA191E /* SimpleLineIcons.ttf */; };
+		006091542A729DBE00FA191E /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091412A729DBD00FA191E /* FontAwesome6_Brands.ttf */; };
+		006091552A729DBE00FA191E /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 006091422A729DBD00FA191E /* MaterialIcons.ttf */; };
+		00D6E7F32A6FA2CE0022B08E /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D6E7F22A6FA2CC0022B08E /* BootSplash.storyboard */; };
 		00E356F31AD99517003FC87E /* PhoneShakeDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PhoneShakeDTests.m */; };
+		0BE97F0B78084B4ABCAB2503 /* SFNSText-BoldG3.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B986401B334CAC8A88E4AC /* SFNSText-BoldG3.otf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-PhoneShakeD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-PhoneShakeD.a */; };
+		0DF050FFB3FD4F77B444DE2E /* SFNSText-BoldG1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 754B814977014B14965B535E /* SFNSText-BoldG1.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1901934D51F949C0BDCA1BF2 /* SFNSText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4DF5313625E24DF995D843BD /* SFNSText-Regular.otf */; };
+		1BDD9F7833524999895EC25E /* SFNSText-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 673F14223A5D46E08C72A2A7 /* SFNSText-SemiboldItalic.otf */; };
+		25876A243C1A44238B9BDAB3 /* SFNSDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3CAFE093BB1C47F6B2948312 /* SFNSDisplay-Bold.otf */; };
+		26AF734FB17B45F181814314 /* SFNSDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55BB255427FB4C3A9B257445 /* SFNSDisplay-Light.otf */; };
+		2FE3D670C289452C9727C0D8 /* SFNSText-RegularItalicG3.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F2FC42676A44516B5D438D2 /* SFNSText-RegularItalicG3.otf */; };
+		36AB434E29BB43B3A7C56041 /* SFNSText-RegularItalicG2.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5436CE131B4441FA177566D /* SFNSText-RegularItalicG2.otf */; };
+		40F2245257B64ACFAD2C3751 /* SFNSText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8234A66B9A17437A919D23B0 /* SFNSText-Bold.otf */; };
+		4301C8911C1245E684AA75CE /* SFNSText-RegularG2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 486F4ACF9B2C494E8B4DC748 /* SFNSText-RegularG2.otf */; };
+		4731BE643EB341CAA1A5D197 /* SFNSText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E71089F7A2774F99B36ECDAB /* SFNSText-Medium.otf */; };
+		47599B805D6342DF9C126D28 /* SFNSText-RegularItalicG1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7809B0E0A17A4D57855ADC1D /* SFNSText-RegularItalicG1.otf */; };
+		65408C7B72CD4911A84DDB8D /* SFNSText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8AF4522CF97B4217A1681BCA /* SFNSText-Light.otf */; };
+		66EF870B6BF6420A9545B0D4 /* SFNSText-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 903ADEACFE1E4AB8B8247693 /* SFNSText-BoldItalic.otf */; };
+		6C153EE4A2EA4F8B91D11CF8 /* SFNSText-RegularG1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D51EE993CCC4FD1A47A1888 /* SFNSText-RegularG1.otf */; };
+		6E56DF66FFDE480DB3E95039 /* SFNSText-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4F3E03284D104324858BA782 /* SFNSText-MediumItalic.otf */; };
+		6F3EA3B19339466A9B9EF7D8 /* SFNSDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1E022620CFBD4E44AB13900D /* SFNSDisplay-Ultralight.otf */; };
 		7699B88040F8A987B510C191 /* libPods-PhoneShakeD-PhoneShakeDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-PhoneShakeD-PhoneShakeDTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		7BC03EA7D67F4BA0800E43C4 /* SFNSDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8A2B79260F8A468FBEC2D14E /* SFNSDisplay-Heavy.otf */; };
+		869BD1BAA534441B8F893BD6 /* SFNSText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B35013FDC34727A201453A /* SFNSText-Heavy.otf */; };
+		89203381F2BC44BD80475757 /* SFNSText-BoldItalicG2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1174CC1530D44177BC57260A /* SFNSText-BoldItalicG2.otf */; };
+		9518378FFD374D53A7838B4F /* SFNSText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1BB8FE0D8C2F4EF3942BAA2D /* SFNSText-Semibold.otf */; };
+		9932B912029D4B82B1862EE0 /* SFNSText-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 689B1B83A7B34676BC644747 /* SFNSText-LightItalic.otf */; };
+		A01D362BFD3640EC907D63FE /* SFNSText-RegularG3.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3402F0354E74746941A973B /* SFNSText-RegularG3.otf */; };
+		A29B77670D3842CFBF0D094D /* SFNSText-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C14B537BE3224AFA896168CA /* SFNSText-HeavyItalic.otf */; };
+		A968446CA5AE469DBF120CCA /* SFNSText-BoldG2.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C6D196DB8D348209458CF48 /* SFNSText-BoldG2.otf */; };
+		B0D83BD514BA4CCEA9C8A449 /* SFNSText-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC25F8D741124E8880505D6A /* SFNSText-RegularItalic.otf */; };
+		B2EF366A43CC4479B18A0A0C /* SFNSText-BoldItalicG1.otf in Resources */ = {isa = PBXBuildFile; fileRef = 06EB50998D5E4F4EBF378BB2 /* SFNSText-BoldItalicG1.otf */; };
+		BE3788F52A824F5997790B8F /* SFNSText-BoldItalicG3.otf in Resources */ = {isa = PBXBuildFile; fileRef = CEF6E8CF29EE4D3298834EA0 /* SFNSText-BoldItalicG3.otf */; };
+		BF0C996FE8984D7DB50CE793 /* SFNSDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C579630EE82149A2B15F9B99 /* SFNSDisplay-Thin.otf */; };
+		BF4D7ADC3840401B888FAC24 /* Borel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4AD0814F31342A8AAFE2CA7 /* Borel-Regular.ttf */; };
+		C41519A1C5B545128FB4F0DC /* SFNSDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 16492F7A2D6B4ADEA8BDA146 /* SFNSDisplay-Black.otf */; };
+		D842CF30CCD8427D8B59837A /* SFNSDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AF0B79DFC8514DF49C157839 /* SFNSDisplay-Regular.otf */; };
+		E259192398BD41119AB2160C /* SFNSDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E8C1766C943B475E9D2BDAD2 /* SFNSDisplay-Medium.otf */; };
+		FE66A1216BEF40C7AADBEE4C /* SFNSDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1943C06F9A54E94BCDE73A3 /* SFNSDisplay-Semibold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,23 +80,76 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		006091302A729DBD00FA191E /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		006091312A729DBD00FA191E /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		006091322A729DBD00FA191E /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		006091332A729DBD00FA191E /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
+		006091342A729DBD00FA191E /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		006091352A729DBD00FA191E /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		006091362A729DBD00FA191E /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		006091372A729DBD00FA191E /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		006091382A729DBD00FA191E /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		006091392A729DBD00FA191E /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		0060913A2A729DBD00FA191E /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		0060913B2A729DBD00FA191E /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		0060913C2A729DBD00FA191E /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		0060913D2A729DBD00FA191E /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		0060913E2A729DBD00FA191E /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		0060913F2A729DBD00FA191E /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Solid.ttf; sourceTree = "<group>"; };
+		006091402A729DBD00FA191E /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		006091412A729DBD00FA191E /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
+		006091422A729DBD00FA191E /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		00D6E7F22A6FA2CC0022B08E /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = PhoneShakeD/BootSplash.storyboard; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* PhoneShakeDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhoneShakeDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* PhoneShakeDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneShakeDTests.m; sourceTree = "<group>"; };
+		06EB50998D5E4F4EBF378BB2 /* SFNSText-BoldItalicG1.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-BoldItalicG1.otf"; path = "../src/assets/fonts/SFNSText-BoldItalicG1.otf"; sourceTree = "<group>"; };
+		0D51EE993CCC4FD1A47A1888 /* SFNSText-RegularG1.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-RegularG1.otf"; path = "../src/assets/fonts/SFNSText-RegularG1.otf"; sourceTree = "<group>"; };
+		1174CC1530D44177BC57260A /* SFNSText-BoldItalicG2.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-BoldItalicG2.otf"; path = "../src/assets/fonts/SFNSText-BoldItalicG2.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* PhoneShakeD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneShakeD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PhoneShakeD/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = PhoneShakeD/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PhoneShakeD/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PhoneShakeD/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PhoneShakeD/main.m; sourceTree = "<group>"; };
+		16492F7A2D6B4ADEA8BDA146 /* SFNSDisplay-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSDisplay-Black.otf"; path = "../src/assets/fonts/SFNSDisplay-Black.otf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-PhoneShakeD-PhoneShakeDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhoneShakeD-PhoneShakeDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB8FE0D8C2F4EF3942BAA2D /* SFNSText-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-Semibold.otf"; path = "../src/assets/fonts/SFNSText-Semibold.otf"; sourceTree = "<group>"; };
+		1E022620CFBD4E44AB13900D /* SFNSDisplay-Ultralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSDisplay-Ultralight.otf"; path = "../src/assets/fonts/SFNSDisplay-Ultralight.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-PhoneShakeD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneShakeD.debug.xcconfig"; path = "Target Support Files/Pods-PhoneShakeD/Pods-PhoneShakeD.debug.xcconfig"; sourceTree = "<group>"; };
+		3CAFE093BB1C47F6B2948312 /* SFNSDisplay-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSDisplay-Bold.otf"; path = "../src/assets/fonts/SFNSDisplay-Bold.otf"; sourceTree = "<group>"; };
+		486F4ACF9B2C494E8B4DC748 /* SFNSText-RegularG2.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-RegularG2.otf"; path = "../src/assets/fonts/SFNSText-RegularG2.otf"; sourceTree = "<group>"; };
+		4DF5313625E24DF995D843BD /* SFNSText-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-Regular.otf"; path = "../src/assets/fonts/SFNSText-Regular.otf"; sourceTree = "<group>"; };
+		4F3E03284D104324858BA782 /* SFNSText-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-MediumItalic.otf"; path = "../src/assets/fonts/SFNSText-MediumItalic.otf"; sourceTree = "<group>"; };
+		55BB255427FB4C3A9B257445 /* SFNSDisplay-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSDisplay-Light.otf"; path = "../src/assets/fonts/SFNSDisplay-Light.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-PhoneShakeD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneShakeD.release.xcconfig"; path = "Target Support Files/Pods-PhoneShakeD/Pods-PhoneShakeD.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-PhoneShakeD-PhoneShakeDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneShakeD-PhoneShakeDTests.debug.xcconfig"; path = "Target Support Files/Pods-PhoneShakeD-PhoneShakeDTests/Pods-PhoneShakeD-PhoneShakeDTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C6D196DB8D348209458CF48 /* SFNSText-BoldG2.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-BoldG2.otf"; path = "../src/assets/fonts/SFNSText-BoldG2.otf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-PhoneShakeD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhoneShakeD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PhoneShakeD/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F2FC42676A44516B5D438D2 /* SFNSText-RegularItalicG3.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-RegularItalicG3.otf"; path = "../src/assets/fonts/SFNSText-RegularItalicG3.otf"; sourceTree = "<group>"; };
+		673F14223A5D46E08C72A2A7 /* SFNSText-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-SemiboldItalic.otf"; path = "../src/assets/fonts/SFNSText-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		689B1B83A7B34676BC644747 /* SFNSText-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-LightItalic.otf"; path = "../src/assets/fonts/SFNSText-LightItalic.otf"; sourceTree = "<group>"; };
+		754B814977014B14965B535E /* SFNSText-BoldG1.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-BoldG1.otf"; path = "../src/assets/fonts/SFNSText-BoldG1.otf"; sourceTree = "<group>"; };
+		7809B0E0A17A4D57855ADC1D /* SFNSText-RegularItalicG1.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-RegularItalicG1.otf"; path = "../src/assets/fonts/SFNSText-RegularItalicG1.otf"; sourceTree = "<group>"; };
+		8234A66B9A17437A919D23B0 /* SFNSText-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-Bold.otf"; path = "../src/assets/fonts/SFNSText-Bold.otf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-PhoneShakeD-PhoneShakeDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhoneShakeD-PhoneShakeDTests.release.xcconfig"; path = "Target Support Files/Pods-PhoneShakeD-PhoneShakeDTests/Pods-PhoneShakeD-PhoneShakeDTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A2B79260F8A468FBEC2D14E /* SFNSDisplay-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSDisplay-Heavy.otf"; path = "../src/assets/fonts/SFNSDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		8AF4522CF97B4217A1681BCA /* SFNSText-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-Light.otf"; path = "../src/assets/fonts/SFNSText-Light.otf"; sourceTree = "<group>"; };
+		903ADEACFE1E4AB8B8247693 /* SFNSText-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-BoldItalic.otf"; path = "../src/assets/fonts/SFNSText-BoldItalic.otf"; sourceTree = "<group>"; };
+		A4AD0814F31342A8AAFE2CA7 /* Borel-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Borel-Regular.ttf"; path = "../src/assets/fonts/Borel-Regular.ttf"; sourceTree = "<group>"; };
+		A5436CE131B4441FA177566D /* SFNSText-RegularItalicG2.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-RegularItalicG2.otf"; path = "../src/assets/fonts/SFNSText-RegularItalicG2.otf"; sourceTree = "<group>"; };
+		AF0B79DFC8514DF49C157839 /* SFNSDisplay-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSDisplay-Regular.otf"; path = "../src/assets/fonts/SFNSDisplay-Regular.otf"; sourceTree = "<group>"; };
+		BC25F8D741124E8880505D6A /* SFNSText-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-RegularItalic.otf"; path = "../src/assets/fonts/SFNSText-RegularItalic.otf"; sourceTree = "<group>"; };
+		C14B537BE3224AFA896168CA /* SFNSText-HeavyItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-HeavyItalic.otf"; path = "../src/assets/fonts/SFNSText-HeavyItalic.otf"; sourceTree = "<group>"; };
+		C1943C06F9A54E94BCDE73A3 /* SFNSDisplay-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSDisplay-Semibold.otf"; path = "../src/assets/fonts/SFNSDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		C579630EE82149A2B15F9B99 /* SFNSDisplay-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSDisplay-Thin.otf"; path = "../src/assets/fonts/SFNSDisplay-Thin.otf"; sourceTree = "<group>"; };
+		C8B35013FDC34727A201453A /* SFNSText-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-Heavy.otf"; path = "../src/assets/fonts/SFNSText-Heavy.otf"; sourceTree = "<group>"; };
+		CEF6E8CF29EE4D3298834EA0 /* SFNSText-BoldItalicG3.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-BoldItalicG3.otf"; path = "../src/assets/fonts/SFNSText-BoldItalicG3.otf"; sourceTree = "<group>"; };
+		D2B986401B334CAC8A88E4AC /* SFNSText-BoldG3.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-BoldG3.otf"; path = "../src/assets/fonts/SFNSText-BoldG3.otf"; sourceTree = "<group>"; };
+		E71089F7A2774F99B36ECDAB /* SFNSText-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-Medium.otf"; path = "../src/assets/fonts/SFNSText-Medium.otf"; sourceTree = "<group>"; };
+		E8C1766C943B475E9D2BDAD2 /* SFNSDisplay-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSDisplay-Medium.otf"; path = "../src/assets/fonts/SFNSDisplay-Medium.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F3402F0354E74746941A973B /* SFNSText-RegularG3.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFNSText-RegularG3.otf"; path = "../src/assets/fonts/SFNSText-RegularG3.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +172,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0060912F2A729DBD00FA191E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				006091302A729DBD00FA191E /* Fontisto.ttf */,
+				006091312A729DBD00FA191E /* Octicons.ttf */,
+				006091322A729DBD00FA191E /* Feather.ttf */,
+				006091332A729DBD00FA191E /* FontAwesome6_Regular.ttf */,
+				006091342A729DBD00FA191E /* Entypo.ttf */,
+				006091352A729DBD00FA191E /* FontAwesome5_Brands.ttf */,
+				006091362A729DBD00FA191E /* MaterialCommunityIcons.ttf */,
+				006091372A729DBD00FA191E /* AntDesign.ttf */,
+				006091382A729DBD00FA191E /* Foundation.ttf */,
+				006091392A729DBD00FA191E /* Ionicons.ttf */,
+				0060913A2A729DBD00FA191E /* FontAwesome5_Solid.ttf */,
+				0060913B2A729DBD00FA191E /* FontAwesome5_Regular.ttf */,
+				0060913C2A729DBD00FA191E /* FontAwesome.ttf */,
+				0060913D2A729DBD00FA191E /* Zocial.ttf */,
+				0060913E2A729DBD00FA191E /* EvilIcons.ttf */,
+				0060913F2A729DBD00FA191E /* FontAwesome6_Solid.ttf */,
+				006091402A729DBD00FA191E /* SimpleLineIcons.ttf */,
+				006091412A729DBD00FA191E /* FontAwesome6_Brands.ttf */,
+				006091422A729DBD00FA191E /* MaterialIcons.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		00E356EF1AD99517003FC87E /* PhoneShakeDTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,11 +218,12 @@
 		13B07FAE1A68108700A75B9A /* PhoneShakeD */ = {
 			isa = PBXGroup;
 			children = (
+				0060912F2A729DBD00FA191E /* Fonts */,
+				00D6E7F22A6FA2CC0022B08E /* BootSplash.storyboard */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = PhoneShakeD;
@@ -122,6 +255,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				F19BE458AFEA45E0A3EFEA07 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +280,48 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-PhoneShakeD-PhoneShakeDTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F19BE458AFEA45E0A3EFEA07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16492F7A2D6B4ADEA8BDA146 /* SFNSDisplay-Black.otf */,
+				3CAFE093BB1C47F6B2948312 /* SFNSDisplay-Bold.otf */,
+				8A2B79260F8A468FBEC2D14E /* SFNSDisplay-Heavy.otf */,
+				55BB255427FB4C3A9B257445 /* SFNSDisplay-Light.otf */,
+				E8C1766C943B475E9D2BDAD2 /* SFNSDisplay-Medium.otf */,
+				AF0B79DFC8514DF49C157839 /* SFNSDisplay-Regular.otf */,
+				C1943C06F9A54E94BCDE73A3 /* SFNSDisplay-Semibold.otf */,
+				C579630EE82149A2B15F9B99 /* SFNSDisplay-Thin.otf */,
+				1E022620CFBD4E44AB13900D /* SFNSDisplay-Ultralight.otf */,
+				8234A66B9A17437A919D23B0 /* SFNSText-Bold.otf */,
+				754B814977014B14965B535E /* SFNSText-BoldG1.otf */,
+				5C6D196DB8D348209458CF48 /* SFNSText-BoldG2.otf */,
+				D2B986401B334CAC8A88E4AC /* SFNSText-BoldG3.otf */,
+				903ADEACFE1E4AB8B8247693 /* SFNSText-BoldItalic.otf */,
+				06EB50998D5E4F4EBF378BB2 /* SFNSText-BoldItalicG1.otf */,
+				1174CC1530D44177BC57260A /* SFNSText-BoldItalicG2.otf */,
+				CEF6E8CF29EE4D3298834EA0 /* SFNSText-BoldItalicG3.otf */,
+				C8B35013FDC34727A201453A /* SFNSText-Heavy.otf */,
+				C14B537BE3224AFA896168CA /* SFNSText-HeavyItalic.otf */,
+				8AF4522CF97B4217A1681BCA /* SFNSText-Light.otf */,
+				689B1B83A7B34676BC644747 /* SFNSText-LightItalic.otf */,
+				E71089F7A2774F99B36ECDAB /* SFNSText-Medium.otf */,
+				4F3E03284D104324858BA782 /* SFNSText-MediumItalic.otf */,
+				4DF5313625E24DF995D843BD /* SFNSText-Regular.otf */,
+				0D51EE993CCC4FD1A47A1888 /* SFNSText-RegularG1.otf */,
+				486F4ACF9B2C494E8B4DC748 /* SFNSText-RegularG2.otf */,
+				F3402F0354E74746941A973B /* SFNSText-RegularG3.otf */,
+				BC25F8D741124E8880505D6A /* SFNSText-RegularItalic.otf */,
+				7809B0E0A17A4D57855ADC1D /* SFNSText-RegularItalicG1.otf */,
+				A5436CE131B4441FA177566D /* SFNSText-RegularItalicG2.otf */,
+				5F2FC42676A44516B5D438D2 /* SFNSText-RegularItalicG3.otf */,
+				1BB8FE0D8C2F4EF3942BAA2D /* SFNSText-Semibold.otf */,
+				673F14223A5D46E08C72A2A7 /* SFNSText-SemiboldItalic.otf */,
+				A4AD0814F31342A8AAFE2CA7 /* Borel-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +418,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				0060914E2A729DBE00FA191E /* FontAwesome5_Regular.ttf in Resources */,
+				006091432A729DBE00FA191E /* Fontisto.ttf in Resources */,
+				006091482A729DBE00FA191E /* FontAwesome5_Brands.ttf in Resources */,
+				0060914C2A729DBE00FA191E /* Ionicons.ttf in Resources */,
+				0060914D2A729DBE00FA191E /* FontAwesome5_Solid.ttf in Resources */,
+				006091472A729DBE00FA191E /* Entypo.ttf in Resources */,
+				00D6E7F32A6FA2CE0022B08E /* BootSplash.storyboard in Resources */,
+				0060914A2A729DBE00FA191E /* AntDesign.ttf in Resources */,
+				006091502A729DBE00FA191E /* Zocial.ttf in Resources */,
+				0060914B2A729DBE00FA191E /* Foundation.ttf in Resources */,
+				006091542A729DBE00FA191E /* FontAwesome6_Brands.ttf in Resources */,
+				006091452A729DBE00FA191E /* Feather.ttf in Resources */,
+				006091532A729DBE00FA191E /* SimpleLineIcons.ttf in Resources */,
+				006091512A729DBE00FA191E /* EvilIcons.ttf in Resources */,
+				006091442A729DBE00FA191E /* Octicons.ttf in Resources */,
+				0060914F2A729DBE00FA191E /* FontAwesome.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				006091492A729DBE00FA191E /* MaterialCommunityIcons.ttf in Resources */,
+				006091522A729DBE00FA191E /* FontAwesome6_Solid.ttf in Resources */,
+				006091462A729DBE00FA191E /* FontAwesome6_Regular.ttf in Resources */,
+				006091552A729DBE00FA191E /* MaterialIcons.ttf in Resources */,
+				C41519A1C5B545128FB4F0DC /* SFNSDisplay-Black.otf in Resources */,
+				25876A243C1A44238B9BDAB3 /* SFNSDisplay-Bold.otf in Resources */,
+				7BC03EA7D67F4BA0800E43C4 /* SFNSDisplay-Heavy.otf in Resources */,
+				26AF734FB17B45F181814314 /* SFNSDisplay-Light.otf in Resources */,
+				E259192398BD41119AB2160C /* SFNSDisplay-Medium.otf in Resources */,
+				D842CF30CCD8427D8B59837A /* SFNSDisplay-Regular.otf in Resources */,
+				FE66A1216BEF40C7AADBEE4C /* SFNSDisplay-Semibold.otf in Resources */,
+				BF0C996FE8984D7DB50CE793 /* SFNSDisplay-Thin.otf in Resources */,
+				6F3EA3B19339466A9B9EF7D8 /* SFNSDisplay-Ultralight.otf in Resources */,
+				40F2245257B64ACFAD2C3751 /* SFNSText-Bold.otf in Resources */,
+				0DF050FFB3FD4F77B444DE2E /* SFNSText-BoldG1.otf in Resources */,
+				A968446CA5AE469DBF120CCA /* SFNSText-BoldG2.otf in Resources */,
+				0BE97F0B78084B4ABCAB2503 /* SFNSText-BoldG3.otf in Resources */,
+				66EF870B6BF6420A9545B0D4 /* SFNSText-BoldItalic.otf in Resources */,
+				B2EF366A43CC4479B18A0A0C /* SFNSText-BoldItalicG1.otf in Resources */,
+				89203381F2BC44BD80475757 /* SFNSText-BoldItalicG2.otf in Resources */,
+				BE3788F52A824F5997790B8F /* SFNSText-BoldItalicG3.otf in Resources */,
+				869BD1BAA534441B8F893BD6 /* SFNSText-Heavy.otf in Resources */,
+				A29B77670D3842CFBF0D094D /* SFNSText-HeavyItalic.otf in Resources */,
+				65408C7B72CD4911A84DDB8D /* SFNSText-Light.otf in Resources */,
+				9932B912029D4B82B1862EE0 /* SFNSText-LightItalic.otf in Resources */,
+				4731BE643EB341CAA1A5D197 /* SFNSText-Medium.otf in Resources */,
+				6E56DF66FFDE480DB3E95039 /* SFNSText-MediumItalic.otf in Resources */,
+				1901934D51F949C0BDCA1BF2 /* SFNSText-Regular.otf in Resources */,
+				6C153EE4A2EA4F8B91D11CF8 /* SFNSText-RegularG1.otf in Resources */,
+				4301C8911C1245E684AA75CE /* SFNSText-RegularG2.otf in Resources */,
+				A01D362BFD3640EC907D63FE /* SFNSText-RegularG3.otf in Resources */,
+				B0D83BD514BA4CCEA9C8A449 /* SFNSText-RegularItalic.otf in Resources */,
+				47599B805D6342DF9C126D28 /* SFNSText-RegularItalicG1.otf in Resources */,
+				36AB434E29BB43B3A7C56041 /* SFNSText-RegularItalicG2.otf in Resources */,
+				2FE3D670C289452C9727C0D8 /* SFNSText-RegularItalicG3.otf in Resources */,
+				9518378FFD374D53A7838B4F /* SFNSText-Semibold.otf in Resources */,
+				1BDD9F7833524999895EC25E /* SFNSText-SemiboldItalic.otf in Resources */,
+				BF4D7ADC3840401B888FAC24 /* Borel-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

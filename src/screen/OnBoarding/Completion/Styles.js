@@ -4,7 +4,7 @@ import { s,ms, mvs } from "react-native-size-matters";
 
 
 const Styles=StyleSheet.create({
-    BaseView:{
+    ParentViewiew:{
         flex:1,
         backgroundColor:'white',
         justifyContent:'center',

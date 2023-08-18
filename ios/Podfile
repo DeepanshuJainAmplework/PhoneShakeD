@@ -26,6 +26,8 @@ if linkage != nil
 end
 
 target 'PhoneShakeD' do
+  # …
+  pod 'RNBootSplash', :path => '../node_modules/react-native-bootsplash'
   config = use_native_modules!
 
   # Flags change depending on the env values.
@@ -43,12 +45,15 @@ target 'PhoneShakeD' do
     :flipper_configuration => flipper_config,
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
+    
   )
 
   target 'PhoneShakeDTests' do
     inherit! :complete
     # Pods for testing
   end
+
+  
 
   post_install do |installer|
     # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202

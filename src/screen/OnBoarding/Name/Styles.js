@@ -9,7 +9,7 @@ const Styles = StyleSheet.create({
   inactiveBtn: {
     backgroundColor: 'rgba(32 142 251/0.5)',
   },
-  BaseView: {
+  ParentViewiew: {
     backgroundColor: 'white',
     flex: 1,
     justifyContent: 'center',
@@ -17,19 +17,26 @@ const Styles = StyleSheet.create({
     
   },
   Input: {
-    borderBottomColor: 'rgb(168 168 168)',
-    borderBottomWidth: 1,
-    flexDirection: 'row',
+    flex: 0.34,
+    width: 290,
+    flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  subText:{
+  inputText: {
+    fontSize: 18,
+    paddingBottom: 8,
+    borderBottomColor: 'rgb(168 168 168)',
+    borderBottomWidth: 1,
+    width: 280,
+    textAlign: 'center',
+  },
+  subText: {
     marginTop: 7,
     fontSize: s(10),
     color: 'rgb(168 168 168)',
     textAlign: 'center',
   },
-  
 });
 
 export default Styles;

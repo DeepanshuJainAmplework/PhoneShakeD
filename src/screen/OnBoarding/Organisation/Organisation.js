@@ -1,86 +1,58 @@
-import React, {useState} from "react";
-import { View, Text, TextInput, TouchableWithoutFeedback, Keyboard } from "react-native";
-
-import HeaderP from '../../../containers/header';
-import {Heading} from '../../../components/Text';
+import React, {useState} from 'react';
+import HeaderContainer from '../../../containers/header';
+import {Heading,SubText} from '../../../components/Text';
 import {Btn} from '../../../components/Pressable';
 import Styles from './Styles';
+import {ParentView, HeaderView, HeadingView, InputView, ButtonView} from '../../../containers/FolderContainers';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import {InputText} from '../../../components/Textinput';
 
 const Org = ({navigation}) => {
-  const[fname,setfname]=useState("");
+  const [fname, setfname] = useState('');
 
-    const validate=()=>{
-        if(fname.length>0){
-            return true;
-        }
-        else{
-            return false;
-        }
+  const validate = () => {
+    if (fname.length > 0) {
+      return true;
+    } else {
+      return false;
     }
+  };
 
-    return (
-        <TouchableWithoutFeedback
-      onPress={() => {
-        Keyboard.dismiss();
-      }}>
-      <View style={Styles.BaseView}>
-        <View style={{flex: 0.1, width: '100%'}}>
-          <HeaderP
-            back="<"
-            onPressBack={() => navigation.goBack()}
-            backDisable={false}
-            title=" "
-            onpressSkip={()=>navigation.navigate('Designation')}
-            SkipDisable={false}
-            SkipText="Skip"
-          />
-        </View>
+  return (
+    <ParentView>
+      <HeaderView>
+        <HeaderContainer
+          back={<Ionicons name="chevron-back-sharp" size={24} />}
+          onPressBack={() => navigation.goBack()}
+          onpressSkip={() => navigation.navigate('Designation')}
+          SkipText="Skip"
+        />
+      </HeaderView>
 
-        <Heading
-          Htext={
-            " What's your current Organization ?"
-          }
+      <HeadingView>
+        <Heading Htext={" What's your\ncurrent Organization ?"} />
+      </HeadingView>
+      <InputView>
+        <InputText
+          placeholder="Organization name"
+          onChangeText={value => setfname(value)}
         />
 
-        <View style={{flex: 0.5, justifyContent: 'center', width: 290}}>
-          <View style={Styles.Input}>
-            
+        <SubText text="Add your company/organization name" />
+      </InputView>
 
-            <TextInput
-              placeholder="Organization name"
-              autoCapitalize='words'
-              inputMode="text"
-              keyboardType="default"
-              value={fname}
-              onChangeText={value=> setfname(value)}
-              style={{fontSize: 18}}
-            />
-          </View>
-          <Text
-            style={{marginTop: 7,
-                fontSize: 12,
-                color: 'rgb(168 168 168)',
-                textAlign: 'center',}}>
-            Add your company/organization name
-          </Text>
-        </View>
-
-        <View style={{flex: 0.3, justifyContent: 'center', width: '85%'}}>
-          <Btn
-            disabled={!validate()}
-            onPress={()=>(validate()==true?
-             navigation.navigate('Designation'):null)
-            }
-            title="Continue"
-            bgcolor={validate() == true ? Styles.activeBtn : Styles.inactiveBtn}
-          />
-        </View>
-      </View>
-    </TouchableWithoutFeedback>
-        
-
-    );
-  
+      <ButtonView>
+        <Btn
+          disabled={!validate()}
+          onPress={() =>
+            validate() == true ? navigation.navigate('Designation') : null
+          }
+          title="Continue"
+          bgcolor={validate() == true ? Styles.activeBtn : Styles.inactiveBtn}
+        />
+      </ButtonView>
+    </ParentView>
+  );
 };
 
 export default Org;

@@ -1,7 +1,9 @@
+import { ThemeProvider } from '@react-navigation/native';
 import React from 'react';
 import {View, Text, Alert, Pressable, StyleSheet} from 'react-native';
 import {s} from 'react-native-size-matters';
-const HeaderP = ({
+import { themedefault } from '../Theme';
+const HeaderContainer = ({
   back,
   onPressBack,
   backDisable,
@@ -9,12 +11,13 @@ const HeaderP = ({
   onpressSkip,
   SkipDisable,
   SkipText,
+  borderbottomwidth
 }) => {
   return (
-    <View style={style.Boxview}>
+    <View style={[style.Boxview,{borderBottomWidth:borderbottomwidth}]}>
       <Pressable
         onPress={onPressBack}
-        style={{flex: 0.15}}
+        style={{flex: 0.2}}
         disabled={backDisable}>
         <Text style={style.Back}>{back}</Text>
       </Pressable>
@@ -37,19 +40,21 @@ const style = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    minHeight: 30,
+    
+    borderBottomColor:themedefault.colors.lightgray,
+    
   },
   Back: {
     textAlign: 'left',
     color: 'dodgerblue',
-    fontSize: 30,
-    paddingLeft: s(15),
+    fontSize:s(17),
+    paddingLeft: s(8),
     fontWeight: '400',
   },
   Title: {
     textAlign: 'center',
     color: 'black',
-    fontSize: 20,
+    fontSize: s(20),
     textAlignVertical: 'center',
     flex: 0.65,
     fontWeight: '400',
@@ -59,8 +64,8 @@ const style = StyleSheet.create({
     color: 'dodgerblue',
     fontSize: s(17),
     textAlignVertical: 'center',
-    paddingRight:15
+    paddingRight:s(10)
   },
 });
 
-export default HeaderP;
+export default HeaderContainer;
