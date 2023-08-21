@@ -8,10 +8,10 @@ const SignUpInfo=()=>{
     return(
         <ParentView>
             <HeaderView>
-                <HeaderContainer borderbottomwidth={1} back={<Ionicons name="chevron-back-sharp" size={25} />} />
+                <HeaderContainer title='SignUp Info' borderbottomwidth={1} back={<Ionicons name="chevron-back-sharp" size={25} />}  />
             </HeaderView>
             <View style={{flex:0.95}}>
-
+                
             </View>
 
 

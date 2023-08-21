@@ -10,6 +10,8 @@ const themedefault={
         lightPink: '#F5DDE6',
         green: '#1F8E4B',
         blue: '#409CFF',
+        lightestgray:'rgb(247 247 247)'
+        
     },
     fonts:{        
 		'Borel':'Borel-Regular'

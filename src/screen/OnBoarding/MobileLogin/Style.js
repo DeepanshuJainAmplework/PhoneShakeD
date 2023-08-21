@@ -24,7 +24,7 @@ const Styles=StyleSheet.create({
         textAlign: 'center',
         width: s(154),
         fontWeight: '600',
-        fontFamily:themedefault.fonts.Borel,
+        
     },
     emailPressable:
         {width: 285, height: 36, marginTop: 8

@@ -64,8 +64,7 @@ const Styles = StyleSheet.create({
     marginTop: ms(5),
     width:'90%'
   },
-  utilities:{
-    justifyContent: 'space-between',
+  utilities:{   
     flex: 0.63,
     backgroundColor: '#ffff',
     flexWrap: 'wrap',
@@ -73,7 +72,8 @@ const Styles = StyleSheet.create({
     borderWidth: 20,
     borderColor: 'white',
     columnGap:11,
-    alignSelf:'flex-start'
+    alignSelf:'flex-start',
+    width:'100%'
   }
 });
 

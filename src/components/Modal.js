@@ -1,5 +1,12 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, Modal, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Modal,
+  TouchableWithoutFeedback,
+} from 'react-native';
+import {} from 'react-native-gesture-handler';
 import {s} from 'react-native-size-matters';
 
 const ModalComponent = ({logoutpress, visible, onClose}) => {
@@ -9,8 +16,10 @@ const ModalComponent = ({logoutpress, visible, onClose}) => {
       transparent={true}
       visible={visible}
       onRequestClose={onClose}>
-      <View style={style.overlay} >
-        <View style={{flex:0.7}}></View>
+      <View style={style.overlay}>
+        <TouchableWithoutFeedback onPressIn={onClose}>
+          <View style={{flex: 0.7}}></View>
+        </TouchableWithoutFeedback>
         <View style={style.container}>
           <View style={style.view}>
             <Text style={[style.text, {fontWeight: 700}]}>Logout</Text>
@@ -27,6 +36,35 @@ const ModalComponent = ({logoutpress, visible, onClose}) => {
             </Text>
           </View>
         </View>
+      </View>
+    </Modal>
+  );
+};
+
+const ModalUtil = props => {
+  return (
+    <Modal
+      animationType='slide'
+      transparent={true}
+      visible={props.visible}
+      onRequestClose={props.onClose}
+    >
+      <View style={{flex:1, }}>
+        <TouchableWithoutFeedback onPressIn={props.onClose}>
+          <View style={{flex:0.37,}}>
+
+          </View>
+        </TouchableWithoutFeedback>
+        <View style={{flex:0.54,}}>
+          {props.children}
+
+        </View>
+        <TouchableWithoutFeedback onPressIn={props.onClose}>
+        <View style={{flex:0.09}}>
+
+        </View>
+        </TouchableWithoutFeedback>
+
       </View>
     </Modal>
   );
@@ -58,4 +96,4 @@ const style = StyleSheet.create({
   },
 });
 
-export {ModalComponent};
+export {ModalComponent, ModalUtil};

@@ -2,14 +2,15 @@ import React from "react";
 import {View, Image, StyleSheet, Text, Pressable, TouchableOpacity} from 'react-native';
 import { s, ms, mvs } from "react-native-size-matters";
 
-const UserInfoIcon=({onPress,source,text, navigation})=>{
+const UserInfoIcon=({onPress,sourceimg,text, })=>{
+    
     return(
-        <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
-        <View style={style.contain}>
+        <TouchableOpacity key={text} onPress={onPress} activeOpacity={0.7}  >
+        <View style={style.contain}  >
             <View style={style.imageView}>
-                <Image resizeMode="contain" style={style.Image} source={source}/>
+            <Image resizeMode="contain" style={style.Image} source={sourceimg} />  
             </View>
-            <Text style={style.info}>
+            <Text style={style.info}  >
                 {text}
             </Text>
             

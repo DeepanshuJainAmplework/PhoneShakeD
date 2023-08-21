@@ -33,7 +33,8 @@ const styles = StyleSheet.create({
     marginTop: 7,
     fontSize: s(10),
     color: 'rgb(168 168 168)',
-    textAlign: 'center',  }
+    textAlign: 'center',  },
+    
 });
 
 export {Heading, SubText};

@@ -1,11 +1,44 @@
-import React from 'react';
-import {View, Text, Image, Pressable, Alert} from 'react-native';
+import React, {useState} from 'react';
+import {
+  View,
+  Text,
+  Image,
+  Pressable,
+  Alert,
+  TouchableOpacity,
+  FlatList,
+} from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Styles from './Styles';
 import {s, ms} from 'react-native-size-matters';
 import {UserInfoIcon} from '../../../containers/UserInfoIcons';
+import {ModalUtil} from '../../../components/Modal';
+import {} from 'react-native-gesture-handler';
+import {DATA} from './UtilitiesList';
+import {themedefault} from '../../../Theme';
 
 const Profile = ({navigation}) => {
+  const [modalVisible, setModalVisible] = useState(false);
+  const [addUtils, setAddUtils] = useState([]);
+  const modalOpen = () => {
+    setModalVisible(true);
+  };
+  const modalClose = () => {
+    setModalVisible(false);
+  };
+
+  const AddUtil = item => {
+    const newUtil = (
+      <UserInfoIcon
+        onPress={() => navigation.navigate('Options')}
+        text={item.name}
+        sourceimg={item.source}
+        length={addUtils.length + 1}
+      />
+    );
+
+    setAddUtils([...addUtils, newUtil]);
+  };
   return (
     <>
       <View style={Styles.UserProfile}>
@@ -37,53 +70,52 @@ const Profile = ({navigation}) => {
         </Text>
       </View>
 
-      <View
-        style={Styles.utilities}>
+      <View style={Styles.utilities}>
+        {addUtils}
+
         <UserInfoIcon
-          source={require('../../../assets/Location.png')}
-          text="Location"
-          onPress={()=>navigation.navigate('LinkedAccounts')}
-        />
-        <UserInfoIcon
-          source={require('../../../assets/website.png')}
-          text="Website"
-          onPress={()=>navigation.navigate('LinkedAccounts')}
-        />
-        <UserInfoIcon
-          source={require('../../../assets/Fax.png')}
-          text="Fax"
-          onPress={()=>navigation.navigate('LinkedAccounts')}
-        />
-        <UserInfoIcon
-          source={require('../../../assets/Facebook.png')}
-          text="Facebook"
-          onPress={()=>navigation.navigate('LinkedAccounts')}
-        />
-        <UserInfoIcon
-          source={require('../../../assets/Linkedin.png')}
-          text="Linkedin"
-          onPress={()=>navigation.navigate('LinkedAccounts')}
-        />
-        <UserInfoIcon
-          source={require('../../../assets/Twitter.png')}
-          text="Twitter"
-          onPress={()=>navigation.navigate('LinkedAccounts')}
-        />
-        <UserInfoIcon
-          source={require('../../../assets/Tumblr.png')}
-          text="Tumblr"
-          onPress={()=>navigation.navigate('LinkedAccounts')}
-        />
-        <UserInfoIcon
-          source={require('../../../assets/Whatsapp.png')}
-          text="Whatsapp"
-          onPress={()=>navigation.navigate('LinkedAccounts')}
-        />
-        <UserInfoIcon
-          source={require('../../../assets/Add.png')}
+          sourceimg={require('../../../assets/Add.png')}
           text="Add"
-          onPress={()=>navigation.navigate('LinkedAccounts')}
+          onPress={modalOpen}
         />
+
+        <ModalUtil visible={modalVisible} onClose={modalClose}>
+          <View
+            style={{
+              flex: 1,
+              alignItems: 'center',
+              backgroundColor: themedefault.colors.lightdodgerblue,
+            }}>
+            <FlatList
+              keyExtractor={(item, index) => index?.toString()}
+              showsVerticalScrollIndicator={false}
+              data={DATA}
+              renderItem={({item}) => (
+                <TouchableOpacity
+                  onPress={() => {
+                    modalClose();
+                    AddUtil(item);
+                  }}>
+                  <Text
+                    style={{
+                      fontWeight: '500',
+                      textAlign: 'center',
+                      fontSize: 20,
+                      backgroundColor: themedefault.colors.dogerblue,
+                      color: themedefault.colors.white,
+                      marginVertical: ms(10),
+                      paddingVertical: 20,
+                      paddingHorizontal: 100,
+                      borderRadius: 30,
+                      overflow: 'hidden',
+                    }}>
+                    {item.name}
+                  </Text>
+                </TouchableOpacity>
+              )}
+            />
+          </View>
+        </ModalUtil>
       </View>
     </>
   );

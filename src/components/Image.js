@@ -34,6 +34,18 @@ const BottomTabIcon=({source})=>{
   )
 }
 
+const ContactlistImage=({source})=>{
+  return(
+    <Image 
+    source={source}
+    resizeMode='contain'
+    style={{height:45,width:45, borderRadius:45/2, marginHorizontal:s(10), marginTop:10}}
+
+    />
+
+  );
+};
+
 
 
 const style=StyleSheet.create({
@@ -49,4 +61,4 @@ const style=StyleSheet.create({
     }
 })
 
-export {ForwardIcon,LinkedListIcons, BottomTabIcon};
+export {ForwardIcon,LinkedListIcons, BottomTabIcon, ContactlistImage};

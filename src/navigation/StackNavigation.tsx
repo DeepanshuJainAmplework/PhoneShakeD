@@ -34,16 +34,18 @@ const Navigation = () => {
     <SafeAreaView style={{ flex: 1 }}>
 
       <Stack.Navigator screenOptions={() => ({ headerShown: false })}>
+        <Stack.Screen name='SamplePage' component={SamplePage} />
         <Stack.Screen name='HomeScreenBottomTab' component={HomeScreenBottomTab} />
         <Stack.Screen name='Options' component={SettingList} />
         <Stack.Screen name='Update' component={UpdateScreen} />
-        <Stack.Screen name='LinkedAccounts' component={LinkedAccounts} />        
-        <Stack.Screen name='updateAccountInfo' component={UpdateAccountInfo}/>
+        <Stack.Screen name='LinkedAccounts' component={LinkedAccounts} />
+        <Stack.Screen name='updateAccountInfo' component={UpdateAccountInfo} />
         <Stack.Screen name='Address' component={Address} />
         <Stack.Screen name='SignUpInfo' component={SignUpInfo} />
         <Stack.Screen name='Privacy' component={PrivateAccount} />
         <Stack.Screen name='Notifications' component={Notifications} />
         <Stack.Screen name='BlockedContacts' component={BlockedContacts} />
+
         <Stack.Screen name='Landing' component={Landing} />
         <Stack.Screen name='MobileLogin' component={MobileLogin} />
         <Stack.Screen name='EmailLogin' component={EmailLogin} />
@@ -54,13 +56,9 @@ const Navigation = () => {
         <Stack.Screen name='UserName' component={UserName} />
         <Stack.Screen name='Terms' component={TermsData} />
         <Stack.Screen name='Completion' component={Completion} />
-        <Stack.Screen name='SamplePage' component={SamplePage} />
-          
         
         
-
-
-
+        
       </Stack.Navigator>
     </SafeAreaView>
 

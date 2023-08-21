@@ -9,7 +9,7 @@ const SamplePage = ({navigation}) => {
   return (
     <ParentView>
       <HeaderView>
-        <HeaderContainer SkipText="Skip" onpressSkip={() => navigation.navigate('HomeScreenBottomTab')} />
+        <HeaderContainer SkipText="Skip" onpressSkip={() => navigation.navigate('HomeScreenBottomTab',{screen:false})} />
       </HeaderView>
 
       <View style={Styles.SampleView}>
@@ -23,8 +23,8 @@ const SamplePage = ({navigation}) => {
         <Btn
           title="Continue"
           disabled={false}
-          onPress={() => navigation.navigate('HomeScreenBottomTab')}
-          bgcolor={{}}
+          onPress={() => navigation.navigate('HomeScreenBottomTab', {screen:true})}
+          
         />
       </View>
     </ParentView>
