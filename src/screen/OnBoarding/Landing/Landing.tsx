@@ -3,8 +3,11 @@ import { View, Image, Text, ImageBackground, Pressable, Alert, SafeAreaView } fr
 import { Styles } from "./Style";
 import { s, vs } from "react-native-size-matters";
 import { Btn } from "../../../components/Pressable";
+import { Storage } from "../../../navigation/StackNavigation";
 
 const img = { uri: 'https://cdn.zeplin.io/5b2c0e9a6370866b9f9526d4/assets/A5E46374-3130-4A86-BDB3-DB635DFB663C.png' }
+
+
 
 const Landing = ({ navigation }: { navigation: any }) => {
     return (
@@ -22,7 +25,7 @@ const Landing = ({ navigation }: { navigation: any }) => {
             </View>
             <View style={{ flex: 0.3, alignItems: 'center', justifyContent:'center'}}>
                 <View >
-                    <Btn onPress={() => (navigation.navigate('MobileLogin'))} title={'Get Started'} disabled={false}
+                    <Btn onPress={() => {navigation.navigate('MobileLogin'); }} title={'Get Started'} disabled={false}
                     bgcolor={{}}/>
                         
                 </View>

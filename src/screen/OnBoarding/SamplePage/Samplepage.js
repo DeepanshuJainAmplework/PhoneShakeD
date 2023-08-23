@@ -4,12 +4,13 @@ import Styles from './Styles';
 import HeaderContainer from '../../../containers/header';
 import {Btn} from '../../../components/Pressable';
 import {ParentView, HeaderView} from '../../../containers/FolderContainers';
+import { Storage } from '../../../navigation/StackNavigation';
 
 const SamplePage = ({navigation}) => {
   return (
     <ParentView>
       <HeaderView>
-        <HeaderContainer SkipText="Skip" onpressSkip={() => navigation.navigate('HomeScreenBottomTab',{screen:false})} />
+        <HeaderContainer SkipText="Skip" onpressSkip={() => { Storage.set('token',true)}} />
       </HeaderView>
 
       <View style={Styles.SampleView}>
@@ -23,7 +24,7 @@ const SamplePage = ({navigation}) => {
         <Btn
           title="Continue"
           disabled={false}
-          onPress={() => navigation.navigate('HomeScreenBottomTab', {screen:true})}
+          onPress={() =>{ Storage.set('token', true);}}
           
         />
       </View>

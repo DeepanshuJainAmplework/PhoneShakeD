@@ -6,6 +6,7 @@ import Styles from './Styles';
 import {  ParentView,  HeaderView,  HeadingView,  InputView,  ButtonView} from '../../../containers/FolderContainers';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {InputText} from '../../../components/Textinput';
+import { Storage } from '../../../navigation/StackNavigation';
 
 const Designation = ({navigation}) => {
   const [fname, setfname] = useState('');
@@ -44,7 +45,7 @@ const Designation = ({navigation}) => {
         <Btn
           disabled={!validate()}
           onPress={() =>
-            validate() == true ? navigation.navigate('UserName') : null
+             {navigation.navigate('UserName'); Storage.set('Designation',fname); } 
           }
           title="Continue"
           bgcolor={validate() == true ? Styles.activeBtn : Styles.inactiveBtn}

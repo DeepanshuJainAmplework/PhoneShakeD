@@ -1,6 +1,6 @@
 import { ThemeProvider } from '@react-navigation/native';
 import React from 'react';
-import {View, Text, Alert, Pressable, StyleSheet} from 'react-native';
+import {View, Text, Alert, Pressable, StyleSheet, TouchableOpacity} from 'react-native';
 import {s} from 'react-native-size-matters';
 import { themedefault } from '../Theme';
 const HeaderContainer = ({
@@ -11,25 +11,25 @@ const HeaderContainer = ({
   onpressSkip,
   SkipDisable,
   SkipText,
-  borderbottomwidth
+  borderbottomwidth,
 }) => {
   return (
     <View style={[style.Boxview,{borderBottomWidth:borderbottomwidth}]}>
-      <Pressable
+      <TouchableOpacity
         onPress={onPressBack}
         style={{flex: 0.2}}
         disabled={backDisable}>
         <Text style={style.Back}>{back}</Text>
-      </Pressable>
+      </TouchableOpacity>
 
       <Text style={style.Title}>{title}</Text>
 
-      <Pressable
+      <TouchableOpacity
         onPress={onpressSkip}
         style={{flex: 0.2}}
         disabled={SkipDisable}>
         <Text style={style.Skip}>{SkipText}</Text>
-      </Pressable>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -39,9 +39,9 @@ const style = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center',
-    
+    alignItems: 'center',    
     borderBottomColor:themedefault.colors.lightgray,
+    minWidth:35
     
   },
   Back: {

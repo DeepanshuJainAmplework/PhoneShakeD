@@ -19,7 +19,7 @@ const InputText = ({placeholder, onChangeText}) => {
   );
 };
 
-const MobileInputText = ({placeholderMobile, onChangeTextMobile}) => {
+const MobileInputText = ({placeholderMobile, onChangeTextMobile,onSelect}) => {
   return (
     <View
       style={{
@@ -30,7 +30,7 @@ const MobileInputText = ({placeholderMobile, onChangeTextMobile}) => {
         justifyContent: 'center',
         width:'93%'
       }}>
-      <Selectlist />
+      <Selectlist onSelect={onSelect}/>
       <TextInput
         placeholder={placeholderMobile}
         inputMode="numeric"
@@ -39,6 +39,7 @@ const MobileInputText = ({placeholderMobile, onChangeTextMobile}) => {
         autoCapitalize="none"
         onChangeText={onChangeTextMobile}
         style={style.inputTextMobile}
+        
       />
     </View>
   );

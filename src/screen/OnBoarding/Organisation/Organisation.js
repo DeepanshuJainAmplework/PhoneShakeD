@@ -6,6 +6,7 @@ import Styles from './Styles';
 import {ParentView, HeaderView, HeadingView, InputView, ButtonView} from '../../../containers/FolderContainers';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {InputText} from '../../../components/Textinput';
+import { Storage } from '../../../navigation/StackNavigation';
 
 const Org = ({navigation}) => {
   const [fname, setfname] = useState('');
@@ -24,7 +25,7 @@ const Org = ({navigation}) => {
         <HeaderContainer
           back={<Ionicons name="chevron-back-sharp" size={24} />}
           onPressBack={() => navigation.goBack()}
-          onpressSkip={() => navigation.navigate('Designation')}
+          onpressSkip={() => {navigation.navigate('Designation'); }}
           SkipText="Skip"
         />
       </HeaderView>
@@ -44,8 +45,8 @@ const Org = ({navigation}) => {
       <ButtonView>
         <Btn
           disabled={!validate()}
-          onPress={() =>
-            validate() == true ? navigation.navigate('Designation') : null
+          onPress={() =>{
+             navigation.navigate('Designation'); Storage.set('Organisation', fname); }
           }
           title="Continue"
           bgcolor={validate() == true ? Styles.activeBtn : Styles.inactiveBtn}

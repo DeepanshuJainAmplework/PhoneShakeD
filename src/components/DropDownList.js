@@ -3,7 +3,7 @@ import {View, Text} from 'react-native';
 import {SelectList} from 'react-native-dropdown-select-list';
 import { s } from 'react-native-size-matters';
 
-const Selectlist = () => {
+const Selectlist = ({onSelect}) => {
   const [selected, setSelected] = useState('');
   const data = [
     {
@@ -25,13 +25,14 @@ const Selectlist = () => {
   ];
   return (
     <SelectList
-      setSelected={val => setSelected(val)}
+    
+      setSelected={onSelect}
       data={data}
-      save="value"
+      onSelect={onSelect}
       placeholder="US +1"
       maxHeight={80}
       boxStyles={{ paddingHorizontal:0, width:s(70), paddingBottom:8, marginLeft:15, borderWidth:0 }}
-      dropdownStyles={{borderColor: 'white', position:'absolute',width: 100,top: 40,  height:70, }}
+      dropdownStyles={{borderColor: 'white', position:'absolute',width: 100,top: 40,  height:70,  }}
       inputStyles={{color: 'rgb(32 142 251)', fontSize:s(16), }}
       arrowicon={<Text style={{borderWidth:0}}></Text>}
       closeicon={<Text style={{borderWidth:0}}></Text>}

@@ -6,6 +6,7 @@ import CheckBox from '@react-native-community/checkbox';
 import HeaderContainer from '../../../containers/header';
 import {Btn} from '../../../components/Pressable';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Storage } from '../../../navigation/StackNavigation';
 
 const TermsData = ({navigation}) => {
   const [check, setCheck] = useState(false);
@@ -119,7 +120,7 @@ const TermsData = ({navigation}) => {
         <View style={{flex: 0.5}}>
           <Btn
             onPress={() => (
-              validate() == true ? navigation.navigate('SamplePage') : null)}
+              validate() == true ? (navigation.navigate('SamplePage') ): null)}
             title="Complete"
             bgcolor={validate() == true ? Styles.activeBtn : Styles.inactiveBtn}
           />

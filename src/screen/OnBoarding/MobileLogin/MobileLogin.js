@@ -11,16 +11,21 @@ import {
 } from '../../../containers/FolderContainers';
 import {MobileInputText} from '../../../components/Textinput';
 import {SubText, Heading} from '../../../components/Text';
+import { Storage } from '../../../navigation/StackNavigation';
+
 
 const MobileLogin = ({navigation}) => {
   const [fname, setfname] = useState(0);
+  const [code,setCode]=useState(' ');
   const validate = () => {
     if (fname < 10000000000 && fname > 999999999) {
+      
       return true;
     } else {
       return false;
     }
   };
+  
   return (
     <ParentView>
 
@@ -37,6 +42,7 @@ const MobileLogin = ({navigation}) => {
 
       <InputView>
         <MobileInputText
+        
           placeholderMobile={'Mobile Number'}
           onChangeTextMobile={fname => setfname(fname)}
         />
@@ -48,7 +54,10 @@ const MobileLogin = ({navigation}) => {
         <Btn
           disabled={!validate()}
           title="Continue"
-          onPress={() => navigation.navigate('Confirmation')}
+          onPress={() => {
+            Storage.contains('Mobile')==true?(navigation.navigate('Confirmation', {Token:'HomescreenBottomTab'})):
+            (Storage.clearAll(), Storage.set('Mobile',fname), Storage.set('SignUpInfo',fname), navigation.navigate('Confirmation',{Token:'Name'}))
+          }}
           bgcolor={validate() == true ? Styles.activeBtn : Styles.inActiveBtn}
         />
       </ButtonView>

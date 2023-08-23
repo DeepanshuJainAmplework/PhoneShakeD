@@ -18,7 +18,7 @@ const Btn = ({onPress, title, bgcolor, disabled}) => {
             color: themedefault.colors.white,            
             width: s(285),
             textAlign: 'center',
-            padding:ms(17),
+            padding:ms(16),
             borderRadius: 5,
             overflow: 'hidden',
             fontWeight:'500',

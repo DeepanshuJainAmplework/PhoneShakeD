@@ -11,6 +11,7 @@ import {
   ButtonView,
 } from '../../../containers/FolderContainers';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Storage } from '../../../navigation/StackNavigation';
 
 const UserName = ({navigation}) => {
   const [fname, setfname] = useState('');
@@ -80,7 +81,7 @@ const UserName = ({navigation}) => {
           disabled={!validate()}
           onPress={() =>
             Confirmation() == true
-              ? navigation.navigate('Terms')
+              ? (navigation.navigate('Terms'), Storage.set('UserName','@'+fname))
               : (setTextone(''), setTexttwo('is unavailable'))
           }
           title="Continue"

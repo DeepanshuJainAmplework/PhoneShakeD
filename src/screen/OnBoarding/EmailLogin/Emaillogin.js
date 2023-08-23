@@ -11,6 +11,7 @@ import {
 import Styles from './Style';
 import {EmailInputText} from '../../../components/Textinput';
 import {SubText} from '../../../components/Text';
+import { Storage } from '../../../navigation/StackNavigation';
 
 const EmailLogin = ({navigation}) => {
   const [fname, setfname] = useState('');
@@ -53,7 +54,10 @@ const EmailLogin = ({navigation}) => {
         <Btn
           disabled={!validate()}
           title="Continue"
-          onPress={() => navigation.navigate('Confirmation')}
+          onPress={() => {
+            Storage.contains('Email')==true?(navigation.navigate('Confirmation', {Token:'HomescreenBottomTab'})):
+            (Storage.clearAll(), Storage.set('Email',fname), Storage.set('SignUpInfo',fname), navigation.navigate('Confirmation',{Token:'Name'}))
+          }}
           bgcolor={validate() == true ? Styles.activeBtn : Styles.inActiveBtn}
         />
       </ButtonView>

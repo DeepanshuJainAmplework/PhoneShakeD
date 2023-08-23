@@ -6,14 +6,14 @@ import Profile from '../screen/Settings/Profile/Profile';
 import {BottomTabIcon} from '../components/Image';
 import {themedefault} from '../Theme';
 import Message from '../screen/Message/Message';
-import Notification from '../screen/Notification/General';
+
 import ContactsTopTab from './TopTabContacts';
 import NotificationsTopTab from './TopTabNotifications';
 
 const BottomTab = createBottomTabNavigator();
 
 const HomeScreenBottomTab = ({route}) => {
-  const screen=route.params.screen;
+  const screen=route?.params?.screen;
   return (
     <BottomTab.Navigator
       initialRouteName={screen==true?'Me':'Share'}

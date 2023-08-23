@@ -5,6 +5,7 @@ import Styles from './Styles';
 import {ParentView,HeaderView,HeadingView,InputView,ButtonView,} from '../../../containers/FolderContainers';
 import {SubText} from '../../../components/Text';
 import {InputText} from '../../../components/Textinput';
+import { Storage } from '../../../navigation/StackNavigation';
 
 const Name = ({navigation}) => {
   const [fname, setfname] = useState('');
@@ -36,7 +37,7 @@ const Name = ({navigation}) => {
       <ButtonView>
         <Btn
           disabled={!validate()}
-          onPress={() => navigation.navigate('Organization')}
+          onPress={() =>{ navigation.navigate('Organization'); Storage.set('Name',fname);}}
           title="Continue"
           bgcolor={validate() == true ? Styles.activeBtn : Styles.inactiveBtn}
         />

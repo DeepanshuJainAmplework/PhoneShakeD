@@ -9,6 +9,7 @@ import {HeaderView} from '../../../containers/FolderContainers';
 import HeaderContainer from '../../../containers/header';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {StackActions} from '@react-navigation/native';
+import { Storage } from '../../../navigation/StackNavigation';
 const SettingList = ({navigation}) => {
   const [modalVisible, setModalVisible] = useState(false);
 
@@ -23,6 +24,7 @@ const SettingList = ({navigation}) => {
     if (item.screen == 'LogOut') {
       openmodal();
     } else if (item.label != 'Handle') {
+      console.log(Storage.contains(item.id));
       navigation.navigate(item.screen, {name: item.label});
     }
   };
@@ -48,7 +50,7 @@ const SettingList = ({navigation}) => {
             <TouchableOpacity onPress={() => handleItems(item)}>
               <View style={style.itemView}>
                 <Text style={style.ItemText}>{item.label}</Text>
-                <Text style={style.Itemid}>{item.id}</Text>
+                <Text style={style.Itemid}>{Storage.contains(item.id)==true?Storage.getString(item.id):""}</Text>
                 <ForwardIcon />
               </View>
             </TouchableOpacity>
@@ -61,7 +63,9 @@ const SettingList = ({navigation}) => {
           visible={modalVisible}
           onClose={closemodal}
           logoutpress={() => {
-            navigation.dispatch(StackActions.popToTop);
+            Storage.delete('token');            
+            console.log(Storage.getBoolean('token'));
+
           }}
         />
       </View>
@@ -70,3 +74,4 @@ const SettingList = ({navigation}) => {
 };
 
 export default SettingList;
+

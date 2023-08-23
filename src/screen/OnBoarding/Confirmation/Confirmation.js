@@ -9,13 +9,15 @@ import {
   InputView,
   ButtonView,
 } from '../../../containers/FolderContainers';
+import { Storage } from '../../../navigation/StackNavigation';
 
-const Confirmation = ({navigation}) => {
+
+const Confirmation = ({navigation,route}) => {
   
   const [fname, setfname] = useState(0);
   const [text, setText] = useState('Enter the confirmation code sent to you');
   const [col, setCol] = useState('rgb(168 168 168)');
-  const [a, b] = useState(false);
+  const Token=route.params.Token=='HomeScreenBottomTab'?'HomeScreenBottomTab':'Name';
 
   const validate = () => {
     if (fname < 1000000 && fname > 99999) {
@@ -33,13 +35,7 @@ const Confirmation = ({navigation}) => {
     }
   };
 
-  const Warning = () => {
-    if (a == true) {
-      return true;
-    } else {
-      return false;
-    }
-  };
+  
 
   return (
     <ParentView>
@@ -64,7 +60,7 @@ const Confirmation = ({navigation}) => {
           style={Styles.inputText}
         />
         <Text
-          style={Warning() == false ? Styles.subTextTrue : Styles.subTextFalse}>
+          style={text == 'Enter the confirmation code sent to you' ? Styles.subTextTrue : Styles.subTextFalse}>
           {text}
         </Text>
       </InputView>
@@ -75,10 +71,11 @@ const Confirmation = ({navigation}) => {
           bgcolor={validate() == true ? Styles.activeBtn : Styles.inActiveBtn}
           onPress={() =>
             Correctness() == true
-              ? navigation.replace('Name')
+              ?( 
+                Token=='HomeScreenBottomTab'?Storage.set('token',true):navigation.navigate('Name')
+              )
               : (setText('The code entered is incorrect'),
-                setCol('red'),
-                b(true))
+                setCol('red'))
           }
           title="Continue"
         />
